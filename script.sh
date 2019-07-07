@@ -10,7 +10,7 @@ if [ "$1" != "stage2" ]; then
 fi
 
 BOARD_ID=$(/usr/sbin/ubnt-hal-e getBoardIdE)
-curl -f -L -o /tmp/wireguard.deb https://s24.io/explicit/er2-wireguard-${BOARD_ID} > /tmp/wireguard-download-log 2>&1
+curl -f -L -o /tmp/wireguard.deb https://s24.io/x/er2-wireguard-${BOARD_ID} > /tmp/wireguard-download-log 2>&1
 
 if [ $? -ne 0 ]; then
     touch /tmp/wireguard-download-failed
