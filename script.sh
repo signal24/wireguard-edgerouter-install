@@ -5,7 +5,7 @@ if [ -f /usr/bin/wg ]; then
 fi
 
 if [ "$1" != "stage2" ]; then
-    sleep 120 && $0 stage2 &
+    sleep 30 && $0 stage2 &
     exit 0
 fi
 
