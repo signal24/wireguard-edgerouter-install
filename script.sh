@@ -27,4 +27,6 @@ rm -f /tmp/wireguard.deb
 rm -f /tmp/wireguard-download-log
 rm -f /tmp/wireguard-install-log
 
+sg vyattacfg -c "/opt/vyatta/sbin/vyatta-boot-config-loader /config/config.boot"
+
 exit 0
