@@ -1,5 +1,12 @@
 # edgerouter-wireguard-install
 
+Installs Wireguard on EdgeRouter, and re-installs after firmware upgrades.
+
+Note: Currently depends on Signal24 redirection service having the appropriate URL for the latest version. Will update to automatic latest version detection from source repo at a later date.
+
+Wireguard packages provided by https://github.com/Lochnair/vyatta-wireguard.
+
+
 Install:
 ```
 sudo -s
